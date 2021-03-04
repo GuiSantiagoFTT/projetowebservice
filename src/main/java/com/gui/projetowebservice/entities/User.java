@@ -17,8 +17,8 @@ public class User implements Serializable{
     private Long id;
     private String name;
     private String email;
-    private String password;
     private String phone;
+    private String password;
 
     @OneToMany(mappedBy = "client")
     @JsonIgnore
